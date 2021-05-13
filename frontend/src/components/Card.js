@@ -24,7 +24,7 @@ const Card = ({ deal }) => {
 
     return (
 
-        <section class="cf dib br3 tc bw5 w-30 h-20 ma2 shadow-5 pa2-ns">
+        <section class="cf dib br3 tc bw5 w-30 h-20 ma2 shadow-5 pa2-ns" style={{ background : "linear-gradient(to right ,#DB0B5F, #6F00ED)" }} >
             <>
                 <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
                     <h3 className="f2">{deal.name}</h3>
@@ -34,8 +34,8 @@ const Card = ({ deal }) => {
                         {/* <h1 class="f2 pa2 f2-ns mb0 black-90 tl">From: {deal.source}</h1>
                             <h3 class="f2 pa2 f2-ns mb0 black-90 tl">To: {deal.destination}</h3> */}
                     </div>
-                    <h2 className="f3 tl">Original Price: <span style={{ color: "#820001", fontWeight: "bolder" }}>{deal.price.toFixed(2)}/-</span></h2>
-
+                    {/* <h2 className="f3 tl">Original Price: <span style={{ color: "#820001", fontWeight: "bolder" }}>/-</span></h2> */}
+                    <p className="btn btn-danger tc white b pa-1 f4" style={{ borderRadius: 40 , backgroundColor : "grey" , textDecoration : "line-through" }}> Price: {deal.price.toFixed(2)}</p>
                     {/* <h1>Hurry up!!</h1>
                         <div className="f3">Available for: {date.minutes} minutes, {date.seconds} seconds</div> */}
                     <div class="ph2 ph0-ns pb3 pa1   db">

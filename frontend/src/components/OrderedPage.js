@@ -14,7 +14,7 @@ const OrderedPage = () => {
 
     const fetchData = async () => {
         if (!isAuth) {
-            putNotification("Redirecting", "Sire you need to login first")
+            putNotification("Redirecting", "you need to login first")
             history.push("/login")
             return
         }

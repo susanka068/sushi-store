@@ -3,6 +3,8 @@ import Checkout_ITEM from "./CheckoutItem"
 import {Input} from "antd"
 import axios from "axios"
 import putNotification from "./Notification"
+import Particles from 'react-particles-js'
+import ParticleComponent from './ParticleComponent'
 
 const LandingPage = () => {
   const [email, setEmail] = React.useState("")
@@ -23,21 +25,21 @@ const LandingPage = () => {
 
   }
     return (
+      <>
+      <ParticleComponent />
 <div class="jumbotron" style={{minHeight:"100vh"}}>
-  <h1 class="display-3" style={{textAlign:"center"}}>B Store</h1>
-  <p class="lead" style={{textAlign:"center", paddingTop:0}}>Where fashion follows you!!</p>
-  <h1 class="display-4">Hello, Fashion Enthusiast!</h1>
-  <p className="lead">B Store - A store of huge collections of latest and greatest clothings of wide category, just for you. </p>
+  <h1 class="display-3" style={{textAlign:"center"}}>Sushi Store</h1>
+  <p class="lead" style={{textAlign:"center", paddingTop:0}}>One Stop gateway for your fashion ecstasy</p>
+  <h1 class="display-4">Hello, Fashionistas ! Welcome</h1>
+  
   <hr class="my-4" />
   {/* <Checkout_ITEM /> */}
-  <h1 style={{textAlign:"center"}}>Subscribe to our Newsletter</h1>
-  <Input placeholder="email" value={email} type="your email" size="large" style={{marginLeft:"30%", width:"40%"}} onChange={(e) => setEmail(e.target.value)} onPressEnter={send}/>
-  <h6>Check out out best deals...</h6>
+ 
   <p class="lead">
-    <a class="ant-btn ant-btn-primary ant-btn-lg" style={{borderRadius:20}} href="/store" >Enter Into Store</a>
+    <a class="ant-btn ant-btn-primary ant-btn-lg" style={{borderRadius:20 , placeItems: "center" }} href="/store" >Explore The Store</a>
   </p>
 </div>
-
+</>
     )
 }
 

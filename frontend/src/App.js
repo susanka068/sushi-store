@@ -14,6 +14,7 @@ import CheckoutPage from "./components/CheckoutPage";
 import NewArrivalsPage from "./components/NewArrivalsPage";
 import DiscounterStorePage from "./components/DiscounterStorePage"
 import OrderedPage from "./components/OrderedPage"
+import ParticleComponent from "./components/ParticleComponent";
 
 const App= ()=> {
   const [isauth, setisauth] = useRecoilState(authState)
@@ -30,7 +31,7 @@ const App= ()=> {
 
   return (
       <Router>
-
+        {/* <ParticleComponent/> */}
         <Navigation />
          <Switch>
           <Route exact path="/" >

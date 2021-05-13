@@ -48,10 +48,10 @@ const Store = () => {
 
     return (
         <div className="jumbotron">
-            <h1 className="display-4">Home Store</h1>
+            <h1 className="display-4">Sushi-Store</h1>
             <Row>
                 <Col span={18}>
-                    <p className='f2 tc'> Top Picks</p>
+                   
                 </Col>
                 <Col span={6}>
                     Filter - <Select
